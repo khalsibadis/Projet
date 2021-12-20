@@ -7,6 +7,8 @@ import com.projet.project.repository.FournisseurRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FounisseurServiceImpl implements FournisseurService {
     @Autowired
@@ -25,6 +27,12 @@ public class FounisseurServiceImpl implements FournisseurService {
     @Override
     public void supprimerFacture(Long id) {
         factureRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Facture> factures(Facture facture) {
+    List<Facture>  a = factureRepository.findAll();
+    return a;
     }
 
     @Override

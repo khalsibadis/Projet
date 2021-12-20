@@ -7,6 +7,8 @@ import com.projet.project.service.FournisseurService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/fournisseur")
 public class FournisseurRestController {
@@ -30,9 +32,12 @@ public class FournisseurRestController {
         fournisseurService.supprimerFacture(id);
     }
 
-    @GetMapping("/ListeClient")
-    @ResponseBody
-    public void afficherListe() {
-        fournisseurService.afficherListe();
+
+
+@GetMapping("/AfficherList")
+@ResponseBody
+    public List<Facture> factures(Facture facture) {
+       return fournisseurService.factures(facture);
     }
-}
+
+    }

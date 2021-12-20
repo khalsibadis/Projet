@@ -4,6 +4,8 @@ import com.projet.project.entities.Facture;
 import com.projet.project.entities.Fournisseur;
 import com.projet.project.entities.SuperAdmin;
 
+import java.util.List;
+
 public interface FournisseurService {
     public void ajouterFacture(Facture facture);
 
@@ -11,7 +13,9 @@ public interface FournisseurService {
 
     void supprimerFacture(Long id);
 
-    public void afficherListe();
+    List<Facture> factures(Facture facture) ;
+
+    void afficherListe();
 
 
 }
