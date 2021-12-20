@@ -1,12 +1,13 @@
 package com.projet.project.service;
 
+import com.projet.project.entities.Facture;
 import com.projet.project.entities.Fournisseur;
 import com.projet.project.entities.SuperAdmin;
 
 public interface FournisseurService {
-    public void ajouterFacture(Fournisseur fournisseur);
+    public void ajouterFacture(Facture facture);
 
-    public void modifierFacture(Fournisseur fournisseur);
+    public void modifierFacture(Facture facture);
 
     void supprimerFacture(Long id);
 

@@ -1,5 +1,6 @@
 package com.projet.project.controller;
 
+import com.projet.project.entities.Facture;
 import com.projet.project.entities.Fournisseur;
 import com.projet.project.entities.SuperAdmin;
 import com.projet.project.service.FournisseurService;
@@ -13,14 +14,14 @@ public class FournisseurRestController {
     FournisseurService fournisseurService;
 
     @PostMapping("/ajouterFacture")
-    public void ajouterFacture(@RequestBody Fournisseur fournisseur) {
-        fournisseurService.ajouterFacture(fournisseur);
+    public void ajouterFacture(@RequestBody Facture facture) {
+        fournisseurService.ajouterFacture(facture);
     }
 
 
     @PutMapping("/modifierFacture")
-    public void modifierFacture(@RequestBody Fournisseur fournisseur) {
-        fournisseurService.modifierFacture(fournisseur);
+    public void modifierFacture(@RequestBody Facture facture ) {
+        fournisseurService.modifierFacture(facture);
     }
 
     @DeleteMapping("/supprimerFacture/{id}")
