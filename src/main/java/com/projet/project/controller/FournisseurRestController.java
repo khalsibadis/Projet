@@ -14,6 +14,7 @@ public class FournisseurRestController {
     FournisseurService fournisseurService;
 
     @PostMapping("/ajouterFacture")
+    @ResponseBody
     public void ajouterFacture(@RequestBody Facture facture) {
         fournisseurService.ajouterFacture(facture);
     }
@@ -30,6 +31,7 @@ public class FournisseurRestController {
     }
 
     @GetMapping("/ListeClient")
+    @ResponseBody
     public void afficherListe() {
         fournisseurService.afficherListe();
     }

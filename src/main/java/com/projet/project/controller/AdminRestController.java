@@ -28,6 +28,7 @@ public class AdminRestController {
     }
 
     @GetMapping("/Liste")
+    @ResponseBody
     public void afficherListe() {
         adminService.afficherListe();
     }

@@ -21,8 +21,6 @@ public class Fournisseur  implements Serializable {
 @ManyToMany(mappedBy = "fournisseurs")
     private Set<SuperAdmin>superAdmins;
 
-@ManyToMany
-    private Set<User> users;
 
 @OneToMany(mappedBy = "fournisseur")
     private Set<Facture> factures;

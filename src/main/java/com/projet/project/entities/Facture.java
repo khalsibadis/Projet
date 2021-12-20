@@ -19,4 +19,10 @@ public class Facture {
 
     @ManyToOne
     private Fournisseur fournisseur;
+
+    @ManyToOne
+    private User user;
+
+
+
 }

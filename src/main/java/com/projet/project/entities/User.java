@@ -17,8 +17,10 @@ public class User {
     private String UserName;
     private String Password;
 
-    @ManyToMany(mappedBy = "users")
-    private Set<Fournisseur> fournisseurss;
+
+
+    @OneToMany(mappedBy = "user")
+    private Set<Facture> factures;
 
 
 }
