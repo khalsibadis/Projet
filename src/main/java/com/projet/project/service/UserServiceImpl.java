@@ -14,7 +14,7 @@ public class UserServiceImpl implements UserService {
     UserRepository userRepository;
 
     @Override
-    public  List<Facture> FACTURE_LIST(User Id) {
+    public  List<Facture> FACTURE_LIST(int Id) {
         return userRepository.FACTURE_LIST(Id);
         }
 }

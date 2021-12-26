@@ -11,7 +11,7 @@ public interface FournisseurService {
 
     public void modifierFacture(Facture facture);
 
-    void supprimerFacture(Long id);
+    void supprimerFacture(int id);
 
     List<Facture> factures(Facture facture) ;
 

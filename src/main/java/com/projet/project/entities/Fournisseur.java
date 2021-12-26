@@ -15,7 +15,7 @@ public class Fournisseur  implements Serializable {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     private String nom;
     private String password;
 @ManyToMany(mappedBy = "fournisseurs")

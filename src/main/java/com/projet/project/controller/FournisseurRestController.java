@@ -28,7 +28,7 @@ public class FournisseurRestController {
     }
 
     @DeleteMapping("/supprimerFacture/{id}")
-    public void supprimerFacture(@PathVariable("id") Long id) {
+    public void supprimerFacture(@PathVariable("id") int id) {
         fournisseurService.supprimerFacture(id);
     }
 

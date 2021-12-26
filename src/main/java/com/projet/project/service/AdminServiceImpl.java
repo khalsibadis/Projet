@@ -18,7 +18,7 @@ public class AdminServiceImpl implements AdminService{
     }
 
     @Override
-    public void supprimerFournisseur(Long id) {
+    public void supprimerFournisseur(int id) {
         fournisseurRepository.deleteById(id);
     }
 

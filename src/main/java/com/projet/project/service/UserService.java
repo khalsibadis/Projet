@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface UserService {
 
-  public    List<Facture> FACTURE_LIST(User Id);
+  public    List<Facture> FACTURE_LIST(int Id);
 }

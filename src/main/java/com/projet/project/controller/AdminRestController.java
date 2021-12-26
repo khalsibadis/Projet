@@ -18,7 +18,7 @@ public class AdminRestController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public void supprimerFournisseur(@PathVariable("id") Long id) {
+    public void supprimerFournisseur(@PathVariable("id") int id) {
         adminService.supprimerFournisseur(id);
     }
 

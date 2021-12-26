@@ -10,8 +10,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long> {
-    @Query("select u from Facture e where u.id=:id")
-    public List<Facture> FACTURE_LIST(@Param("id") User Id);
+public interface UserRepository extends JpaRepository<User,Integer> {
+    @Query("select e.factures from User e where e.Id=:id")
+    public List<Facture> FACTURE_LIST(@Param("id") int Id);
 
 }

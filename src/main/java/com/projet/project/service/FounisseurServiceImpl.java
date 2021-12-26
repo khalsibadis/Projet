@@ -25,7 +25,7 @@ public class FounisseurServiceImpl implements FournisseurService {
     }
 
     @Override
-    public void supprimerFacture(Long id) {
+    public void supprimerFacture(int id) {
         factureRepository.deleteById(id);
     }
 
